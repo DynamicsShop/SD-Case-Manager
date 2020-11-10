@@ -2,6 +2,8 @@
 
 ### 3.0.5
 #### Features:
-- Demo
+- <div>Edit View and New Actions were removed from the Template Card.</div>
 #### Fixes and Known Issues/Limitations:
 - Demo
+
+
