@@ -15,14 +15,22 @@ SD Case Manager for Microsoft Dynamics 365 Business Central offers a highly flex
 - Control and structure your communications for each step of the process.
 
 ## Use Case Examples
-**HELP DESK:**
+
+**HELP DESK** 
 - Log and manage internal or external Help Desk requests.
-**COMPLAINTS:**
+<br>
+
+**COMPLAINTS**<br>
 - Log, manage customer complaints from logging to resolution.
-**QUALITY:**
+<br>
+
+**QUALITY**<br>
 - Non-conformance – Use a structured process to log and manage both internal and external NCR reports and build in alerts and actions for your Quality and Management team.
-**PROCESS IMPROVEMENT:**
-- From idea to realisation log, workflow, alert and communicate the tasks and events needed to bring change into effect.
+<br>
+
+**PROCESS IMPROVEMENT**<br>
+- From idea to realisation log, workflow, alert and communicate the tasks and events needed to bring change into effect.<br>
+
 
 
 •	[Visit our website](https://www.dynamicsshop.com/products/sd-case-manager/)   
