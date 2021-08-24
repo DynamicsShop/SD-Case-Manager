@@ -1,369 +1,220 @@
-## SD Document Pack Releases
+## SD Case Manager Releases
 
-### 3.4.0
-#### Enhancements
-- <div><span style="display:inline !important;">BCv17 App -</span><span style="box-sizing:border-box;">&nbsp;The Licence Controller message displayed when a user tries to activate a second trial licence for the product on the same site was amended.</span><br></div>
-- <div><span style="display:inline !important;">BCv17 App -</span><span style="box-sizing:border-box;">&nbsp;The Fields in the Overdue Entries section of the SD Document Pack Statement Report were aligned to the fields in the Entries section of the report.</span><br></div>
-- <div><span style="display:inline !important;">BCv17 App -</span><span style="box-sizing:border-box;">&nbsp;A change was made to the SD Document Pack Pro Forma Invoice to display the Standard Texts used to display the Packaging Info.&nbsp;&nbsp;</span><br></div>
-- <div><span style="display:inline !important;">BCv17 App -</span><span style="box-sizing:border-box;">&nbsp;The SD Document Pack Commercial Invoices Email Body names were updated to reflect the reports they were based on - Order, Shipment and Invoice.</span><br></div>
-- <div><span style="display:inline !important;">BCv17 App -<span>&nbsp;The SD Document Pack Commercial Invoices report names were updated to reflect the reports they were based on - Order, Shipment and Invoice.</span></span><br></div>
-- <div>BCv17 App - Field Captions were updated in the Company Info Formatting FastTab on the Setup Card.</div>
-- <div>BCv17 App - Updated a field's caption and tooltip on the SD Document Pack Setup Card.</div>
-- <div>BCv17 App - On import of setup data using the Assisted Setup action in the Setup Card, a message is displayed that Records have successfully imported.</div>
-- <div>BCv17 App - The URLs in the About page were updated for consistency.</div>
-- <div>BCv17 App - The Tax Caption field in the SD Document Pack Setup Card was limited to a length of 6 characters.&nbsp;</div>
-- <div><span style="display:inline !important;">BCv17 App -<span>&nbsp;The Bank Account No field on the <span style="display:inline !important;">SD Document Pack&nbsp;</span>Setup Card and the Report Card was increased to 30 characters as per standard Dynamics 365 Business Central.</span></span><br></div>
-- <div><span style="display:inline !important;">BCv17 App -</span><span style="box-sizing:border-box;">&nbsp;The Bank Account Name field on the Setup Card and the Report Card was increased to 100 characters as per standard Dynamics 365 Business Central.</span><br></div>
-- <div>BCv17 App - On install the HttpClient option in the Extension Management page is now automatically enabled.</div>
-- <div>BCv17 App - Changes were made to the <span style="display:inline !important;">SD Document Pack&nbsp;</span>Trial Licensing validation - only one free trial licence per product per site is now permitted.&nbsp;</div>
-- <div>BCv17 App - Made a change to the following reports layouts to allow to &quot;Use for Email Body&quot; in Report Selection for SD Documents Pack's Sales Quote, Sales Invoice, Sales Order Confirmation, Sales Credit Memo, Sales Proforma Invoice, Customer Statement (Open Items), Customer Statement (Balance Forward), Purchase Order, Sales Commercial Invoice, Sales - Commercial Shipment and Sales - Commercial Invoice.</div>
-- <div>BCv17 App - A &quot;Disable Powered by www.DynamicsShop.com&quot;&nbsp;&nbsp;was added to the Setup Card. This allows users that have a fully licenced (not a free trial licence) to hide this text on SD Document Pack documents and reports.</div>
-- <div>BCv17 App - The TAX Array and Total Box grids on the reports were changed to 5 rows and were evenly aligned with each other.</div>
-- <div><span style="display:inline !important;">BCv17 App - Added a Company Info Formatting FastTab to the Setup Card. This allows the User to exclude fields from the Footer and to define the captions to display for the fields.</span><br></div>
-- <div>BCv17 App - Added a Bank Info Formatting FastTab to the Setup Card. This allows the User to exclude fields from the Footer and to define the captions to display for the fields.</div>
-- <div>BCv17 App - A TAX Caption was added to the SD Document Pack Setup which allows user to specify the Tax Caption to print on SD Document Pack documents and reports GST, VAT, TVA etc. If the field is blank then the Tax Caption defaults to VAT.</div>
-- <div>BCv17 App - A Text option has been added to the Info Box to allow users to define text to print in the Info Box.</div>
-- <div>BCv17 App - Added an option at Document Level to allow the option to print Sell To, Ship To or none on the documents and reports.<br></div>
-- <div>BCv17 App - Changes were made to the Colours FastTab in the Setup Card - the FastTab was renamed from Colour FastTab to Logo FastTab, a text guide for optimal logo size was added and the Company Logo was displayed with a quick link to the Company Information page.</div>
-- <div>BCv17 App - Code was reviewed to ensure that Licence Expiry Date prompts do not stop functionality before the licence has actually expired.</div>
-- <div>BCv17 App - When&nbsp;<span>choosing the Product Activation action prompt the user is prompted that that they need to ensure that they have allowed HttpClient Requests in the Extension Settings page for SD Document Pack.<br></span><span></span></div>
-- <div>BCv17 App - The SD Document Pack Report Selection List is only populated when the Assisted Setup has been run. This Report Selection List is a temporary table populated from the SD Document Pack Reports List page.</div>
-- <div>BCv17 App - The About page and the Activate your Product page were removed from the Tell Me.</div>
-- <div>BCv17 App - The function to print the VAT Registration No. in the Company Info footer was inadvertently commented out. The function was re-instated.</div>
-- <div>BCv17 App - A link to the standard Company Information page was surfaced on the Logo FastTab in the SD Document Pack Setup Card.</div>
-- <div>BCv17 App - The Product Info URL link in the About page was updated.</div>
-- <div>BCv17 App - The prompt that the licence needs to be validated was displaying twice on selecting the Setup Action. The prompt now displays once.</div>
-- <div>BCv17 App - A change was made to the Assisted Setup to setup default data in the current company only. Also a prompt is now displayed and a message is displayed on insert of default data.</div>
-- <div>BCv17 App - The Commercial Invoice FastTab was removed from the Setup Card. The Packaging Information Standard Text field was moved to the General FastTab, was recaptioned and the tooltip on this field was updated.</div>
-- <div>BCv17 App - The About action was removed from the SD Document Pack Role Centre to keep the Role Centre standardised with the Role Centres of our other ISV products.</div>
-- <div>BCv17 App - A number of visual changes were made to the SD Document Pack Setup Card to standardise with the Setup Cards in our other ISV products - menu groups were regrouped and renamed and actions were moved.</div>
-- <div>BCv17 App - Functionality was added to allow for easy update to the default report selection settings.</div>
-- <div>BCv17 App - A quick link was added to the standard Dynamics 365 Business Central Company Information page on the Setup Card to allow for easy Company logo load.</div>
-- <div>BCv17 App - The licence key controller was added to the product. A change was made that if the licence is not a free trial licence then the Powered by <a href="http://www.DynamicsShop.com">www.DynamicsShop.com</a>&nbsp;text on the reports can be disabled.</div>
-- <div>BCv17 App - <span style="display:inline !important;">The SD Document Pack&nbsp;</span>Purchase Order report was updated to show detail lines.<br></div>
-- <div>BCv17 App - The <span style="display:inline !important;">SD Document Pack&nbsp;</span>Pro-Forma Invoice was updated to show detail lines.<br></div>
-- <div>BCv17 App - The <span style="display:inline !important;">SD Document Pack&nbsp;</span>Sales Order&nbsp;<span style="display:inline !important;">was updated to show detail lines.</span> <br></div>
-- <div>BCv17 App - Brexit changes from C/AL release 3.3.7 of <span style="display:inline !important;">SD Document Pack&nbsp;</span>were added to the BCv17 code base. 3 <span style="display:inline !important;">Commercial Invoices were created - n</span>ew variants of the Sales Invoice Report, Sales Shipment Report, and Sales Order Confirmation Report. </div>
-- <div>BCv17 App - the Barcode API was replaced.<br></div>
-- <div>BCv17 App - The functionality in SD Document Pack Reports and Documents was updated to replace the Cross Reference No with the Item Reference feature as per standard Dynamics 365 Business Central.<br></div>
-- <div>BCv17 App - AppSource warnings were fixed in the <span style="display:inline !important;">SD Document Pack&nbsp;</span>code base.</div>
-- <div>NAV 2016 C/AL - A new field was added to the SD Document Pack Setup to allow users to specify the Standard Text field that should appear on the Commercial Invoices. On print of the report SD Document Pack raises an info message if the Standard Text specified in the Setup doesn't appear on the Sales Lines. Users manually insert and update the Standard Texts on the Sales Lines. </div>
+### 3.0.6
 #### Bug Fixes
-- <div>BCv17 App - Fixed an issue where the Barcode type c39 was not printing on the SD Document Pack Bank Account Recon. Statement Report.</div>
+- <div><span style="display:inline !important;">BCv17 App - A fix was made to an error &quot;The Email Item table is empty.&quot; that was raised on execution of escalation rules.</span><br></div>
+- <div>BCv17 App - Fixed an issue where notifications were not being created when the escalations were run.</div>
 
-### 3.3.7
+### 3.0.5
 #### Enhancements
-- <div>NAV 2016 C/AL - A new field was added on the Setup card to allow users to specify the field to use as the EORI Number for the Customer. This field can then be added to the InfoBox on the Commercial Invoice Reports. </div>
-- <div><span style="display:inline !important;">NAV 2016 C/AL - A change was made to remove VAT calculations from the Commercial Invoice on the Sales Shipment Report.</span><br> </div>
-- <div><span style="display:inline !important;">NAV 2016 C/AL - A new variant of the Sales Invoice Report was created for Brexit.</span><br> </div>
-- <div><span style="display:inline !important;">NAV 2016 C/AL - A new variant of the Sales Shipment Report was created for Brexit.</span><br> </div>
-- <div><span style="display:inline !important;">NAV 2016 C/AL - A new variant of the Sales Order Confirmation Report was created for Brexit.</span><br> </div>
+- <div>BCv17 App - Made a change to default the Escalations Card to editable when opened.<br></div>
+- <div><span>BCv17 App - Users are prevented from creating Queues if the Licence is not valid or has expired.</span><br></div>
+- <div>BCv17 App - The Application Area property was set on the Role Centre Activity pages.<br></div>
+- <div>BCv17 App - To aid user input the Escalation Description field on the Escalation line is marked as mandatory.<br></div>
+- <div>BCv17 App - Made a change to the Assisted Setup Import to recognise the duration datatype used in escalations.<br></div>
+- <div>BCv17 App - Edit, View and New Actions were removed from the Template Card.</div>
+- <div><span style="display:inline !important;">BCv17 App - Edit, View and New Actions were removed from the Escalation List in the Queue Card.</span><br></div>
+- <div>BCv17 App - In the Queue Card the Report Actions were set to Promoted only.<br></div>
+- <div>BCv17 App - The Sub Categories list page was missing the Manage menu group.<br></div>
+- <div>BCv17 App - In the Case Actions list, the menu groupings were re-ordered.<br></div>
+- <div>BCv17 App - The Activity Panels from the Role Centre can now be searched for using the Tell Me.<br></div>
+- <div>BCv17 App - The captions of the SD Case Manager objects were changed to be more user descriptive in the Tell Me.<br></div>
+- <div>BCv17 App - The New Action in the Case Interactions and the Actions Interactions FactBoxes were removed. <br></div>
+- <div>BCv17 App - Changes were made to the SD Case Manager Role Display Names.<br></div>
+- <div>BCv17 App - Description length of Statuses and other Case Manager description fields were increased in length as per standard D365BC.<br></div>
+- <div>BCv17 App - Changes were made to the Case Card to replicate how standard D365BC behaves if default no.s are set to yes on a no. series. <br></div>
+- <div>BCv17 App - A change was made to the caption of the Setup Card.<br></div>
+- <div>BCv17 App - The Action menu groups on the Setup Card were updated.<br></div>
+- <div>BCv17 App - Changes were made to the layout of the Activity Groups in the SD Case Manager Role Centres.<br></div>
+- <div>BCv17 App - Changes were made to the object captions as they appear in the Tell Me. <br></div>
+- <div>BCv17 App - The caption of the SD Case Manager reports were changed.<br></div>
+- <div>BCv17 App - Changes were made to the Names of the SD Case Manager Permission Sets.<br></div>
+- <div>BCv17 App - A change was made to the prompt on Activating the Free Trial Licence.<br></div>
+- <div>BCv17 App - The SD Case Manager Role Centre Display Names were updated.<br></div>
+- <div>BCv17 App - Visual changes were made to the SD Case Manager Manager Role Centre.<br></div>
+- <div><span style="display:inline !important;">BCv17 App - Visual changes were made to the SD Case Manager User Role Centre.</span><br></div>
+- <div>BCv17 App - The code was updated to use the latest standard smtp emailing functionality in D365 which has been moved to a separate App.&nbsp;</div>
 #### Bug Fixes
-- <div>BCv17 App - An error that was raised when the SD Document Pack Purchase Order Report was run was fixed.</div>
+- <div>BCv17 App - Fixed an issue where Escalations were not working.<br></div>
+- <div>BCv17 App - Made a fix to remove the Contact E-Mail or the Contact Phone from the Case Card when the Contact No. is removed.<br></div>
+- <div>BCv17 App - The Edit, View and New Actions on Queue Category listpage were removed.<br></div>
+- <div>BCv17 App - The Case Action Card was missing some menu items.<br></div>
+- <div>BCv17 App - An issue was fixed where the New Line Action on the Actions FastTab of the Escalation Card was not behaving correctly.<br></div>
+- <div>BCv17 App - Fixed an issue where a Case was not updated as closed when all Case Actions were closed.<br></div>
+- <div>BCv17 App - An issue was fixed on the Case Card where removing a Contact No from a Case Card raised an error.<br></div>
+- <div>BCv17 App - Issues were fixed that were raised when creating an escalation rule on a Queue Card - users could open a Card for a blank escalation line.<br></div>
+- <div>BCv17 App - The View and Edit Actions were showing twice in the Case Card on the Actions FastTab.<br></div>
+- <div>BCv17 App - Fixed an issue where an error was raised on creation of a Case.<br></div>
+- <div>BCv17 App - Actions on the Case Action Card menu were not displaying. <br></div>
+- <div>BCv17 App - The Actions Cues in the Role Centre weren't calculating the flowfield counts on the cues correctly. <br></div>
+- <div>BCv17 App - In the Case Card, the Actions list page was missing a New Line Action on the Actions FastTab.<br></div>
+- <div>BCv17 App - &nbsp;The Date Format Error that was appearing on opening the Setup Card prior to activating the Free Trial Licence was fixed.<br></div>
+- <div>BCv17 App - The issue with creating attachments on Case Actions was fixed.<br></div>
 
-### 3.4.0
+### 3.0.6
 #### Enhancements
-- <div><span style="display:inline !important;">BCv17 App - A change was made to print the QR Barcodes on the <span style="display:inline !important;">SD Document Pack&nbsp;</span>Bank Account Reconciliation Statement Test Report.</span><br></div>
-- <div>BCv17 App - A change was made to print the QR Barcode on the <span style="display:inline !important;">SD Document Pack&nbsp;</span>Bank Account Reconciliation Statement Report.</div>
-- <div>BCv17 App - The Default Data codeunit was removed from running at App installation and was surfaced on the Assisted Setup action in the SD Document Pack Setup Card as per our other ISV products.</div>
-- <div>BCv17 App - The IBAN conversion logic as per the standard Dynamics 365 Business Central codeunit was applied to the <span style="display:inline !important;">SD Document Pack&nbsp;</span>Branding functionality.</div>
-- BCv16 App - The test licensing was removed from the product.
+- <div>BCv17 App - SD Case Manager Permission sets were created.<br></div>
 
-### 3.3.6
+### 3.0.5
 #### Enhancements
-- BCv16 App - The Publisher name was updated.
-- BCv16 App - The barcode text was sharpened.
-- BCv14 App - A fix was made to an error raised when running the Statement reports from the Tell Me.
-- BCv16 App - Name and Description fields were increased from a length of 50 to 100 as per standard D365BC.
-- BCv14 App - Name and Description fields were increased from a length of 50 to 100 as per standard D365BC.
-- BCv16 App - The order of the Actions in the Setup Card was changed.
-- BCv14 App - The colour picker component was removed from the code.
-- BCv16 App - The product logo was changed.
-- BCv14 App - &quot;BACS Ledger Entry&quot; references were removed from the GB App.
+- <div>BCv17 App - The Usage Category was updated for SD Case Manager pages for the Tell Me search. <br></div>
+- <div>BCv17 App - Visual changes were made to the SD Case Manager About Page. <br></div>
+- <div>BCv17 App - A number of visual changes were made to the SD Case Manager Setup Card. <br></div>
+- <div>BCv17 App - Functionality was created for our Assisted Setup process.<br></div>
+- <div>BCv17 App - The Licencing Control Feature was added to SD Case Manager.<br></div>
+- <div>BCv17 App - The HTML Editor was updated.<br></div>
+- <div>BCv17 App - Certain SD Case Manager pages were removed from the extension to the Sales Order Processor Role Centre.<br></div>
+- <div>BCv17 App - Recoded existing code to allow users send emails with attachments from SD Case Manager.<br></div>
+- <div>BCv17 App - Name and Description fields were updated from 50 to 100 characters as per standard D365BC change.<br></div>
 #### Bug Fixes
-- BCv16 App - Fixed an issue where the Proforma Invoice report was not printing details in the Report Info Box.
-- BCv14 App - Fixed an issue where the Proforma Invoice report was not printing details in the Report Info Box.
-- BCv16 App - A fix was made to a character length error in the Remittance Advice Report ID 43006022.
-- BCv14 App - A fix was made to a character length error in the Remittance Advice Report ID 43006022.
-- <div>BCv16 App - Fixed an issue where a warning message was raised when the user chooses the SD Document Pack Role Centre.<br> </div>
+- <div>BCv17 App - An issue was fixed where, if a Case Manager No. Series was not setup in the Setup Card then, when creating a Case, the page hangs and becomes unresponsive.<br></div>
+- <div>BCv17 App - The sub categories field in the Queue Card did not have a New Line Action. <br></div>
+- <div>BCv17 App - The case status field in the Queue Card did not have a New Line Action. <br></div>
+- <div> <span style="display:inline !important;">•&nbsp;</span>Fixed a bug in SD-CSM Queue Category List Page where selecting page from the Role Centre's Navigation Pane allowed users to
+create a Category not linked to a Queue.&nbsp;</div><div>• Fixed an issue where in the Category Card on creation of a Case the Managed By on the Case was set to the current USERID.&nbsp;</div><div>• Fixed an issue where in the Time charts for the Cases per Queue, Cases per User, Case Open Vs Close, the flowfield was based on the
+create date and was not taking the closed date into account.&nbsp;</div><div>• Fixed an issue where importing the Demo Setup.xml raised an error.&nbsp;</div><div><span style="display:inline !important;">•</span>&nbsp;Fixed an issue where importing the Cases Setup.xml raised an error.&nbsp;</div><div>• Fixed a bug in the SD-CSM Action Type table whereby renaming the Code did not update Cases that had the old Action Code.&nbsp;</div><div>• Fixed a bug in the SD Case Card, Reporter Fast Tab. If a Person Contact was selected and then changed to a Company Contact and
+back to a Person Contact, the Company No. and Company Name were not being set to blank.&nbsp;</div><div>• Added the Case Summary field to the SD-CSM Case Report.&nbsp;</div><div>• Error was raised when opening the Case Manager Role Centre that the User Name is &quot;length of string is 21, but it must be less than
+or equal to 20&quot;.<br></div>
 
-### 3.3.5
-#### Enhancements
-- BCv14 App - Name and description fields were increased from 50 to 100 characters as per standard D365BC.
-- BCv16 App - Report names were changed from SDY UL to SDY DP.
-
-### 3.3.4
-#### Enhancements
-- BCv16 App - Test codeunits were created.
-- BCv16 App - A new logo was added to the product.
-- BCv16 App - Changes were made to SD Document Pack Role Centre. KPIs were surfaced.
-- BCv16 App - Fixed an issue where the Proforma Invoice details were not printing details in the Info Box.
-- BCv16 App - The VAT Reg Entry Update Report was removed from the Release.
-- BCv16 App - The colour picker component was removed from the code.
-- BCv16 App - SD Utilities Launch Documents were rebranded to SD Document Pack.
-- BCv16 App - Objects were readied for App Source Submission.
-- BCv16 App - The code base for D365BCv14 was converted to D365BCv16.
-- BCv14 App - Report Request pages were reviewed and the &quot;No. of Copies&quot; filter was removed as per standard D365BC reports.
-- BCv14 App - On the SD-UL Manifest report, a blank line in the Footer was removed.
-- BCv14 App - The barcode image quality on the SD_UL Sales Quote report was improved.
-- BCv14 App - The Colour Preview displays were removed from the D365BCv14 code base.
-- BCv14 App - The Simply Dynamics Launch dll files were removed from the D365BCv14 code base.
-- BCv14 App - The image component of the info box was removed from the D365BCv14 code base and the info box is now presented as an array.
-- BCv14 App - Objects to upgrade SD Launch from C/AL objects to AL were developed.
-- BCv14 App - Created an installation codeunit to hardcode report setup values on a fresh install of SD Launch for D365BCv14 App.
-- BCv14 App - Added all the changes that were made to reports in the C/AL objects to the BCv14 extensions code base.
-- A Payment Services Panel was added to the &nbsp;SD-UL Pro-Forma Invoice (issued as a separate NAV2018 fob).
-- A Payment Services Panel was added to the SD-UL Sales Order Confirmation (issued as a separate NAV2018 fob).
-- BCv14 App - The GB Bank Reconciliation Reports were converted to D365BCv14 extensions.
-- Additional filters were added to the Request page on the SD-UL Manifest Report.
-- Changes were made to the SD-UL Manifest report to allow more orders to fit on the report page.
-- A Payment Services Panel was added to the SD-UL Invoice (issued as a separate NAV2018 fob).
-- A number of fields were added to the SD-UL Manifest Report.
-- The Ship-to Address field on the SD-UL Manifest Report line was left aligned.
-- A number of fields and new groupings were added to the SD-UL Manifest Report.
-- BCv14 App - A change was made to the SD-UL Sales Quote document to repoint to the new Archive Quotes and Archive Order fields in D365BC.
-- BCv14 App - A non-standard D365BC virtual sorting key was removed from the SD-UL Delivery Docket Report.
-- BCv14 App - A non-standard D365BC virtual sorting key was removed from the SD-UL Manifest Report.
-- BCv14 App - The barcode option types were reviewed and reworked.
-- A change was made to the calculation of Gross Weight and Net Weight to the reports that display the commodity code information.
+### 2.0.1
 #### Bug Fixes
-- BCv14 App - A fix was made to correct balances on the SD-U Open Item Statement report when run from SD Bulk Mailer.
-- A fix was made to correct balances on the SD-U Open Item Statement report when run from SD Bulk Mailer.
-- BCv14 App - A fix was made to a &nbsp;publishing error raised when the Bank Reconciliation reports were published.
-- BCv14 App - Reviewed and reworked the QR barcode printing.
-- BCv14 App - The barcode image on the SD-UL Reports was resized.
-- BCv14 App - Added a filter fix to the SD-UL Statement Balance report to fix an issue when the SD-UL Statement Balance is run from SD Bulk Mailer.
-- Added a filter fix to the SD-UL Statement Balance report to fix an issue when the SD-UL Statement Balance is run from SD Bulk Mailer.
-- Fixed an error that was raised &nbsp;in the Launch Setup card when the ellipse button on the barcode background and foreground colour fields was chosen.
-- BCv14 App - Fixed an issue in the Launch Setup where the first report in the Report Setup page was opening no matter what report was chosen from the list.
-- BCv14 App - Fixed an issue where a message was raised when a new report was added to the Reports Setup page.
-- BCv14 App - Fixed an issue where a barcode was printing on the reports even if no barcode was set to print in the SD Launch Setup.
-- BCv14 App - Fixed an error that was raised &nbsp;in the Launch Setup card when the ellipse button on the barcode background and foreground colour fields was chosen.
-- BCv14 App - Fixed an issue where an error was raised when the About Action was selected.
-- BCv14 App - Visual changes were made to the Launch Setup Card.
-- A fix was applied to the VAT calculations on the SD-UL Sales Credit Memo report when printing copies of the report.
-- Fixed an issue in the VAT Panel in the SD-UL Sales Credit Memo Report.
+- <div><span style="display:inline !important;">•<span>&nbsp;</span></span>Fixed an issue in the Queue Card page where a length of string error is being raised on input of Queue Code.&nbsp;</div><div>• Fixed an issue where an error was raised when drilling into certain Cues in the My Case Activities Activity Group.&nbsp;</div><div>• Fixed displayed values in the Case Report.&nbsp;</div><div>• Fixed an issue in the Case Card whereby printing the Case Report from the Case Card was showing details for all Cases.&nbsp;</div><div>• Fixed an issue in the Case Card whereby choosing to Email the Case Contact was raising a message that the Queue Status did not
+exist.&nbsp;</div><div>• Fixed an issue in the Escalation Rules whereby the placeholder field on the email was not being passed into the email routine when
+Emailing an Assigned User or Watcher.
+• Fixed an issue whereby when logging a new action in the Case Action Card, the Comment disappears if the user selects the Log
+Interaction Action and hasn't selected to Save the Comment.&nbsp;</div><div>• Fixed an issue where in the Case Card, the Email Case Contact Action, attaches the Queue Report, and not the Case Report, to the
+Email.&nbsp;</div><div>• Fixed an issue in the Case Card, where if an Action record is selected, and the Log Interaction Action is chosen, an error is raised. An
+Interaction can be logged against an Action in the Action Card and no error is raised.&nbsp;</div><div>• Fixed an issue in the Queue List, where if the Case Report Action is chosen, an error is raised.<br></div>
 
-### 3.3.3
+### 2.0.0
 #### Enhancements
-- Removed references in the Colour Picker Dialog page to the Simply Dynamics Colour Picker dll.
-- A change was made to the commodity info option list on the Launch Setup to allow for a &lt;blank&gt; option.
-- The SimplyD.SD Utilities - Launch.AddIn.Installer.exe was removed from the release bundle.
-- The SD Utilities Launch - Proforma Invoice report was modified to display commodity code information.
-- The SD Utilities Launch - Sales Invoice report was modified to display commodity code information.
-- The SD Utilities Launch - Delivery Docket report was modified to display commodity code information.
-- The SD Utilities Launch - Sales Shipment report was modified to display commodity code information.
-- The SD Utilities Launch - Sales Order Confirmation report was modified to display commodity code information.
-- New functionality was added to provide an option to display commodity code information on certain reports.
-- A change was made to the calculation of Gross Weight and Net Weight to the reports that display the commodity code information.
-#### Enhancements
-- Removed references in the Colour Picker Dialog page to the Simply Dynamics Colour Picker dll.
-- A change was made to the commodity info option list on the Launch Setup to allow for a &lt;blank&gt; option.
-- The SimplyD.SD Utilities - Launch.AddIn.Installer.exe was removed from the release bundle.
-- The SD Utilities Launch - Proforma Invoice report was modified to display commodity code information.
-- The SD Utilities Launch - Sales Invoice report was modified to display commodity code information.
-- The SD Utilities Launch - Delivery Docket report was modified to display commodity code information.
-- The SD Utilities Launch - Sales Shipment report was modified to display commodity code information.
-- The SD Utilities Launch - Sales Order Confirmation report was modified to display commodity code information.
-- New functionality was added to provide an option to display commodity code information on certain reports.
-- Changed the product name in the About Card to &quot;SD Utilities - Launch Documents&quot;.
+- <div>• Created Template functionality in Case Manager. Templates can be added to a Queue Code and to a Category Code.&nbsp;</div><div>• Created XMLPorts for Upgrade to export and import setup.
+• In the Setup Card, the Calculate Case Times Action was removed from the Ribbon as this functionality is now automatic.&nbsp;</div><div>• Default the shipped Queue Report and Case Report into the report fields when creating a Queue.&nbsp;</div><div>• Created a Que Table to hold flow fields for SD Case Manager.&nbsp;</div><div>• Added flow fields, restructured the Priority table and corresponding code and functionality.&nbsp;</div><div>• Added flow fields, restructured the Category table and corresponding code and functionality.&nbsp;</div><div>• Added flow fields, restructured the Sub Category table and corresponding code and functionality.&nbsp;</div><div>• Added flow fields, restructured the Queue table and corresponding code and functionality.&nbsp;</div><div>• Removed the Default field from the Queue Action Type and updated the corresponding code and functionality.&nbsp;</div><div>• Restructured the Queue Escalation table and corresponding code and functionality. Allowed for Trigger Intervals on Escalation Rules.
+Created a new Escalation Log table and corresponding functionality.&nbsp;</div><div>• Restructured the Case table and corresponding code and functionality.&nbsp;</div><div>• Made Contact fields on Case Card editable. Added new Contact fields to Case Card.&nbsp;</div><div>• Added a Case Closed field to the Case Watcher table. Updated the corresponding code and functionality.&nbsp;</div><div>• Restructured the Case Action table and updated the corresponding code and functionality.&nbsp;</div><div>• Made changes to the Role Centre. Created a Manager view of all Cases and a User view of the Users Cases. Added a list page listing
+the Cases by Priority.&nbsp;</div><div>• Moved Category/Sub Category functionality to Queue Level&nbsp;</div><div>• Moved Queue Action Type functionality to a Global level.&nbsp;</div><div>• Renamed Action Log Type to Action Log on all relevant objects.&nbsp;</div><div>• Created an Analysis table and Code Unit functionality.
+• Created Time Charts.&nbsp;</div><div>• Fixed a spelling mistake in the Role Centre.
+• Made layout changes and improvements to the Case Report and the Queue Report<br></div>
 #### Bug Fixes
-- Fixed an error that was raised when the SD-UL Sales Shipment report was run.
-#### Bug Fixes
-- Fixed an error that was raised when the SD-UL Sales Shipment report was run.
-
-### 3.3.2
-#### Bug Fixes
-- Fixed the group name of the About Action in the SD Launch Setup Card.
-- Fixed an issue where the ignore Zero Amount Lines option was showing the incorrect total on SD-U Statement Open Items.
-- Fixed an issue in the Bank Reconciliation Reports where the reports were including historical/posted transactions when printing by statement.
-
-### 3.3.1
-#### Enhancements
-- Repositioned the fields on Colours FastTab in the Launch Setup.
-- Made a change to the column alignment on the Sales Shipment Report - 43006013.
-- Made a change to allow users to manually enter the HTML colour code for Header and Footer Background and Text colours on the Launch Setup.
-- Updated the logic in the report to display the details of the VAT Analysis on the Purchase Return Order.
-- Updated the logic in the report to display the details of the VAT Analysis on the Sales Return Order.
-- Layout changes made to the Sales Shipment Report – 43006013.
-- Made user improvements for adding reports and fields to the Brand Triggers.
-
-### 3.3.0
-#### Enhancements
-- Added the Report Name to the Barcode drill down on the Launch Setup.
-- Added the Report Selection as a flowfield without drilldown capability to the Launch Setup.
-- Added the Enforce Release Test functionality to the SD-UL Proforma Invoice, SD-UL Pick Instruction, SD-UL Purch. Order, SD-UL Delivery Docket, SD-UL Sales Return Order, and the SD-UL Purchase Return Order.
-- Removed the Bank Reconciliation GB Reports from the SD-Utilities Launch fob.
-- Made a number of user interface changes to the SD-UL Launch Setup Card. Regrouped and renamed Actions and Groups in the Ribbon.
-- Made a change in the SD-UL Launch Setup Card to auto refresh the Bank Account Name and Bank Account No. when the Bank Account is chosen
-- The data rows in the VAT Footer and Total Footer in the SD-UL Sales Return Order and the SD-UL Purchase Return Order were centered.
-- The Direct Unit Cost on the SD-UL Purchase Order Report was aligned as per the other numeric columns on the report.
-- Added the functionality to include the Company Country in the Company Address.
-- Added the standard NAV Email functionality used in Document Layouts to the SD-UL Statement Reports.
-- If the Enforce Released checkbox is selected on the SD-UL setup for a report, when printing the report for a range of records an error was thrown and the report printing was exited. A change was made that when running for a range of records to exclude the unreleased records rather than raise an error.
-- The objects in the SD-U Bank Acc. Recon. Reports.fob fix for NAV 2018 were stamped with the correct version and the modified flag was set to false.
-- The SD Utilities - Launch Footer Messages, Bank and VAT Reg lines were removed from the SD-UL Work Order Report.
-- The data rows and captions on the VAT Footer and Total Summary Footer were centered on the SD-UTLA Documents.
-- The Expected Receipt Date was added to the SD-UL Purchase Order Report.
-- New functionality was added to allow Company Address setup to include or exclude as per the Report Address formatting.
-- Branding Logic was applied to Report SD-UL Purchase - Receipt.
-- Branding Logic was applied to Report SD-UL Customer Payment Receipt.
-- Branding Logic was applied to Report SD-UL Statement Balance Fwd.
-- Branding Logic was applied to Report SD-UL Purchase Return Order.
-- Branding Logic was applied to Report SD-UL Sales Return Order.
-- Branding Logic was applied to Report SD-UL Manifest.
-- Branding Logic was applied to Report SD-UL Delivery Docket.
-- Branding Logic was applied to Report SD-UL Remitt. Advice - Entries.
-- Branding Logic was applied to Report SD-UL Remitt. Advice - Journal.
-- Branding Logic was applied to Report SD-UL Purch. Order.
-- Branding Logic was applied to Report SD-UL Cheque with Advice.
-- Branding Logic was applied to Report SD-UL Statement Open Items.
-- Branding Logic was applied to Report SD-UL Proforma Invoice.
-- Branding Logic was applied to Report SD-UL Sales Credit Memo.
-- Branding Logic was applied to Report SD-UL Sales Shipment.
-- Branding Logic was applied to Report SD-UL Sales Order Confirm.
-- Branding Logic was applied to Report SD-UL Sales Invoice.
-- Made a change to display the Phone Number for the Brand on the report.
-#### Bug Fixes
-- Fixed an issue where removing a record in the SD-UL Brand table did not delete the associated records in the SD-UL Brand Trigger table.
-- Fixed an issue where the Branding Bank Details were not printing on the SD-UL Open Items Statement when Branding was defined for the report.
-- Fixed an intermittent issue raised when adding report fields to the branding triggers.
-- Fixed an issue where, if Branding was set up for the SD-UL Sales Order Report, the Branding Logo was printing on the SD-UL Sales Order irrespective of the defined Branding Triggers.
-- Fixed an issue where the SD-UL Delivery Docket displayed the contact name when the contact name was set to not print.
-- Fixed an error raised when choosing the Add All Launch Reports in the SD-UL Brand Card.
-- Fixed an issue where selecting the Card Action in the Reports FastTab List of the Launch Setup did not open the card for the current record.
-
-### 3.2.1
-#### Enhancements
-- Made a change to display the Bank Details for the Brand on the Report.
-- Minor visual change made to the Role Centre.
-#### Bug Fixes
-- Fixed an issue where there was a fieldsize error raised on preview of the Launch Sales Quote report.
-- Fixed an error raised when choosing the Add All Launch Reports Action on the SD-UL Brand Card.
-
-### 3.2.0
-#### Enhancements
-- Lot reference and lot quantity were added to the Sales Invoice and Delivery Docket.
-- Fixed an issue in the Customer Payment Report where Customer details were not appearing on the Report Header when a customer payment was not allocated.
-- Removed redundant Action on the Launch Setup Page.
-- Added an About Action to the SD-UL Launch Setup Page.
-- Fixed a compile issue in the SD-UL VAT Entry Reg Update Report.
-- Removed Standard NAV OneNote, Notes, and Links from the Launch Setup Pages.
-- Added the About Page to the SD-UL Launch Setup Page.
-- Made minor visual mods to the Launch Role Centre. Added all Launch Reports and Documents to the Role Centre.
-- Included a demo config package in the release.
-- Removed the Barcode and Footer list pages from the Launch Setup. Added the Report List page to the Launch Setup.
-- Added new flowfields to the Launch Setup Table and Page. &nbsp;Drill down available on Info Box Items.
-- Made modifications to the SD-UL Statement Bal Fwd. Report layout.
-- Made modifications to the SD-UL Manifest layout.
-- Made modifications to the SD-UL Delivery Docket &nbsp;layout.
-- Made modifications to the SD-UL Purchase Order layout.
-- Created a new SD Utilities Launch variant of the standard Works Order Report.
-- Made modifications to the SD-UL Pick Instruction layout.
-- Made modifications to the SD-UL Statement Open Items layout.
-- Made modifications to the SD-UL Proforma Invoice layout.
-- Added an Import Config Package Action to the Launch Setup Page.
-- Made modifications to the SD-UL Sales Credit Memo layout.
-- Added a Test Print Action to allow users to print the report for the report line.
-- Made modifications to the SD-UL Sales Shipment layout.
-- Made modifications to the SD-UL Sales Order Confirm layout.
-- Made visual and layout modifications to the SD-UL Sales Invoice document.
-- Made minor layout changes to the SD-UL Sales Quote.
-- Created a new Support About Page.
-- Made a change to the Purchase Order Report to display the Vendor Item Cross Reference No. on the Report. If a Cross Reference doesn't exist, then display the Vendor Item No. from the Item table.
-- Created a NAV 2018 fix for SD-U Bank Acc. Recon. Reports. Attached to release as a separate fob.
-#### Bug Fixes
-- Fixed an issue in the SD-UL Sales Credit Memo VAT Panel.
-
-### 3.1.0
-#### Enhancements
-- Applied new branding functionality to the SD-UL Sales Quote.
-
-### 3.0.0
-#### Enhancements
-- Added new functionality to allow document branding by applying filters.
-- In the SD-U Customer Payment Receipt report the heading 'Payer' as per Remittance Advice was added to keep layouts standard across all documents.
-
-### 2.3.3
-#### Enhancements
-- Added a separator line on the footer of the Launch Customer Payment Receipt as per the Launch Remittance Advice to keep the layout standard.
-- Made changes to the functionality of the Info Box to allow for increased standard NAV header table field sizes in future NAV versions.
-- <div>Refactored DLL from Cebuella to Simply Dynamics.</div><div><span style="">SD Utilities - Launch split into own project.</span><br></div><div><br></div>
-#### Bug Fixes
-- Applied the Include/Exclude Address formatting as specified on the Launch Setup Page to the Launch Customer Payment Receipt.
-
-### 2.3.2
-#### Enhancements
-- <div>Linkbox:&nbsp;</div><div>• Add a setup field to specify document checkout to a default Drop Point check out path.
-<br></div>
-#### Bug Fixes
-- Fixed an issue where &quot;Printed By&quot; was showing on the Launch Customer Payment Receipt when not setup in the settings to print on the report.
-- Added a separator line on the footer of the Launch Customer Payment Receipt as per the Launch Remittance Advice to keep the layout standard.
-- Added heading 'Payer' on the Launch Customer Payment Receipt as per the Launch Remittance Advice to keep the layout standard.
-- Applied decimal formatting to the quantity fields on the Launch Purchase - Receipt report as per our other Launch documents.
-- Fixed an issue where the Receipt No. is not printing in the Header of the Launch Purchase Receipt. It appears to be incorrectly printing the Order No of the receipt (where it exists), or printing blank.
-- Removed the bank details section from the Launch Purchase - Receipt Report.
-- Fixed an issue in the Launch Customer Payment Receipt where the report was printing header details, skipping the rest of the page and then printing the full report on the second page.
-- Fixed an issue whereby the Report Copies were not collating by Document.
-- In the SD-U Sales Order Confirmation, the VAT ID caption was left-aligned to the column.
-- In the SD-U Sales Order Confirmation, space was added between the Qty and UOM columns, and the Qty caption was aligned to the column.
-- In the SD-U Sales Shipment, space was added between the Qty and UOM columns.
-- In the SD-U Proforma Invoice, the Qty column caption was left-aligned to the field.
-- In the SD-U Proforma Invoice, the VAT ID column caption was left-aligned to the field.
-- For each Launch report, a space was added after each comma (,) in the Company Address field.
-
-### 2.3.1
-#### Bug Fixes
-- <div>Linkbox:&nbsp;</div><div>• Fixed Error Message raised when viewing a file in the Drop Point or Versions List.&nbsp;</div><div>• Fixed situation where the View Option was always displaying the same file.
-<br></div>
-
-### 2.3.0
-#### Enhancements
-- <div>Linkbox:&nbsp;</div><div>• Created check in/check out functionality for Linkbox Version Control.<span style="">&nbsp;</span></div><div><span style="">• Added Edit Permission to Linkbox.&nbsp;</span></div><div><span style="">• Cleaned up code.&nbsp;</span></div><div><span style=""><br></span></div><div><span style="">Launch:&nbsp;</span></div><div><span style="">• Upgrade Launch to use Control Suite.&nbsp;</span></div>
-#### Bug Fixes
-- <div><span style="display:inline !important;">•&nbsp;</span>Linkbox - fixed a bug in the scrolling functionality when selecting an Icon for a Drop Point in the Drop Point Card.&nbsp;</div><div>• Linkbox - fixed an issue where when choosing to Edit certain files from the Dropped Files Factbox an error is raised.&nbsp;</div><div>• Linkbox - fixed an issue where Delete Permission on Dropped Files Fact Box not taken into account when you right-click on the
-Dropped Files Fact Box.&nbsp;</div><div><br></div><div>• Launch - fixed alignment issue on the SD-U Customer Payment Receipt Document.<br></div>
-
-### 2.1.2
-#### Enhancements
-- <div>• Updated readme.txt file.&nbsp;</div><div><br></div><div>• Launch - applied Launch standardised document layouts to the Posted Purchase receipt report.&nbsp;</div><div><br></div><div>• Linkbox - enhanced Linkbox file overwrite confirmations<br></div>
-#### Bug Fixes
-- <div><span style="display:inline !important;">•<span>&nbsp;</span></span>Launch - fixed alignment issue on SD-U Sales Return Order Document.&nbsp;</div><div>• Launch - fixed alignment issue on SD-U Purchase Return Order Document.&nbsp;</div><div>• Launch - changed the Launch Documents to use the document currency code rather than customer/vendor currency code when
-deciding the bank details to use on the footer.&nbsp;</div><div><br></div><div>• Linkbox - fixed a bug in the auto linking functionality of a Template File to a record.&nbsp;</div><div>• Linkbox - fixed a bug in the Version History of Dropped Files Linked to a record.&nbsp;</div><div>• Linkbox - fixed a bug in the Version History of auto-created Template Files.&nbsp;</div><div>• Linkbox - fixed a bug where an error was raised on creation of a new record when a Drop Point (with Versioning turned on) is added
-to a Card Page.&nbsp;</div><div>• Linkbox - fixed a bug where the Icon Scroller images were not updating.
-<br></div>
-
-### 2.1.1
-#### Enhancements
-- <div><span style="display:inline !important;">•<span>&nbsp;</span></span>Linkbox - enhanced the Icon Scoller picker.&nbsp;</div><div>• Linkbox - enhanced the Template functionality - allow users to choose to push out the Templates to the Linked tables and select the
-template they want to attach to the records.&nbsp;</div><div><br></div><div>• Launch - surface filters on SD-U Bank Acc. Recon. Stmt Document.&nbsp;</div><div>• Launch - surface filters on the SD-U Bank Acc. Recon. Smt Test Document.&nbsp;</div><div>• Launch - improvement in code to allow for barcode record type value.&nbsp;</div><div>• Launch - optimised the image preview generation.&nbsp;</div><div>• Launch - surfaced the newly added Documents to the Role Center.&nbsp;</div><div>• Launch - applied Launch standardised document layouts to the SD-U Customer Payment Receipt Document.<br></div>
-#### Bug Fixes
-- <div>Launch:&nbsp;</div><div>• Fixed bug where the Statement report overwrites any Date Filters that are passed into the report.&nbsp;</div><div>• Fixed bug where colour choices picked using the colour picker were being re-set.&nbsp;</div><div>• Fixed bug where the QR Barcode was not displaying correctly in the Report Information box.&nbsp;</div><div>• Fixed bug in the Launch Report Setup whereby when a new record was added to the Report Info Box Fields for a specific report, the
-Field No. was not appearing in the order as specified but rather in the order as input.&nbsp;</div><div>• Fix was made to the barcode generation to display as per Launch Report Setup.&nbsp;</div><div>• Minor layout changes were made to existing individual Launch Documents and Reports.&nbsp;</div><div>• Fixed bug which allowed a Barcode to be setup on the Launch Report Setup with a DPI of zero.&nbsp;</div><div>• Fixed bug where the List of Reports showing in the Launch Setup was being hard code filtered on an earlier version release.&nbsp;</div><div>• Fixed bug where the InfoBox and Barcode were not being updated&nbsp;</div><div><br></div><div>Linkbox:&nbsp;</div><div>• Drop Point Icons on List Pages are intermittently not displaying when the List Page is loaded from within the Role Centre.&nbsp;</div><div>• Fixed bug where a link is being created to records with no file attached when a record for a Template File that has no File Imported (a
-blank Filename field) is crated.&nbsp;</div><div>• Fixed error raised when an empty file is dragged and dropped into a Drop Point.&nbsp;</div><div><br></div><div>Profiler:&nbsp;</div><div>• Remove irrelevant Actions from the Profile Selection List.<br></div>
-
-### 2.1.0
-#### Enhancements
-- <div>Launch:&nbsp;</div><div>• All Launch Documents and Reports underwent a code clean up.&nbsp;</div><div>• A Delivery Docket was added to Launch.&nbsp;</div><div>• A Manifest Report was added to Launch.&nbsp;</div><div>• A Bank Account Reconciliation Statement (Posted Entries) was added to Launch.&nbsp;</div><div>• A Bank Account Reconciliation Statement (UnPosted Entries) was added to Launch.&nbsp;</div><div>• A Stock Take Report was added to Launch.&nbsp;</div><div>• A Sales Return Order was added to Launch.
-• A Purchase Return Order was added to Launch.&nbsp;</div><div>• A Balance Forward Statement was added to Launch.&nbsp;</div><div>• A standardised layout was applied across all Launch Documents and Reports.&nbsp;</div><div>• All Field Names and abbreviations were standardised.&nbsp;</div><div>• Decimal formatting was standardised across all Launch Documents and Reports.&nbsp;</div><div>• A new Footer totaling layout and a VAT Grid layout was applied and standardised across the Launch Documents.&nbsp;</div><div>• Positioning of Logos was made consistent across all Launch Documents and Reports.&nbsp;</div><div>• A standard Header and Footer layout and banner, for portrait and landscape layouts, was applied across all Launch Documents and
-Reports.&nbsp;</div><div>• An enhancement was made to allow users to choose the Background and Foreground Header and Footer Banner Colours that would
-print on all Launch Documents and Reports using a Colour Picker.&nbsp;</div><div>• Enhancements were made to the Remittance Advice Reports in Launch. Captions were changed, fields were resized.&nbsp;</div><div>• Functionality to define and display a Barcode on all Launch Documents and Reports was added to Launch.&nbsp;</div><div>• A Report Info Box was applied to the layout of all Launch Documents and Reports.&nbsp;</div><div>• Functionality was added to allow users to dynamically add the fields to print in the Report Info Box.&nbsp;</div><div>• Minor layout changes were made to existing individual Launch Documents and Reports.&nbsp;</div><div>• New functionality was added to allow users to select the Background and Foreground Header and Footer Banner Colours by using a
-colour picker.&nbsp;</div><div>• Improved the resolution of the Report Info Box.&nbsp;</div><div>• Fields and FastTabs for new functionality were added to the Launch Setup Card.&nbsp;</div><div><br></div><div>Linkbox:&nbsp;</div><div>•New functionality added to Linkbox to Security Filter Tables and Pages enabling permissions to be set.&nbsp;</div><div>• Updated the Linkbox Setup to include Security Filters&nbsp;</div><div>• New Security Filters for Dropped Files applied.&nbsp;</div><div>• New Security Filters for Drop Areas applied.
-• Added Company to membership lookup in Linkbox Security Filters.&nbsp;</div><div>• New Version Control functionality added to Linkbox.&nbsp;</div><div>• Provided Version Edit functionality.&nbsp;</div><div>• When viewing a file in the Drop Area, the file is set to read only.&nbsp;</div><div>• Coded increments for Dropped File Entry No.&nbsp;</div><div>• Created a new Table and Page to list, and provide, Dropped File Version functionality.&nbsp;</div><div>•&nbsp;<span style="">Created Template functionality for Linkbox.
-• Changed functionality to retain the SD Linkbox - Orphan Link Files.&nbsp;</span></div><div><span style=""><br></span></div><div><span style="">Profiler:&nbsp;</span></div><div><span style="">• An XMLPort was created to export and import Profile Select List.&nbsp;</span></div><div><span style=""><br></span></div><div><span style="">PowerBI:&nbsp;</span></div><div><span style="">• Added Sales Quote Tracking Functionality to PowerBI.&nbsp;</span></div><div><span style="">• Added functionality to provide for CSV Import/Export for BI Date data.&nbsp;</span></div><div><span style="">• Added the PowerBI Setup Page to the SD Utilities Role Centre.</span></div>
-#### Bug Fixes
-- <div>•Launch - fixed bug where statement report overwrites passed in Date Filter<br></div>
+- <div><span style="display:inline !important;">•<span>&nbsp;</span></span>Fixed a bug where the User Watcher field on the Escalation Rule Action table does not point to User Table.&nbsp;</div><div>• Renamed the New Case Action Log Type field on the Queue Action Log Type table to Default.&nbsp;</div><div>• Renamed the New Case Status field on the Queue Status table to Default.&nbsp;</div><div>• Fixed an issue on the Escalation Rule Actions - the Escalation Rule Action to add a User Watcher now adds the User that is specified
+on the individual Escalation Rule Actions line to the appropriate Case.&nbsp;</div><div>• Fixed an issue on the Escalation Rule Actions regarding Emailing User Watchers.&nbsp;</div><div>• Fixed an issue on the Escalation Rule Actions regarding Notifying User Watchers.&nbsp;</div><div>• Fixed an issue where on creation of a Case, the Case Description was being blanked out/reset to blank.&nbsp;</div><div>• Fixed an issue on the Priority Card and Priority List Page - set the Editable property on the List Page to No.&nbsp;</div><div>• Fixed an issue where the code for the Action File Attachments was recording links to files. The code now uploads the file to the blob
+field.&nbsp;</div><div>• Fixed a Primary Key Error that was raised when creating a new Escalation Rule.&nbsp;</div><div>• Fixed an issue where the Queue Code for an existing Case could not be changed.&nbsp;</div><div>• Restructured the Case List Pages to allow standard filtering on the Case List Pages to allow filtering on cases logged by another user,
+or to filter down by Stage, Date Created, etc.</div><div>• Fixed the inconsistency in Queue Code field length between the tables.<br></div>
 
 ### 1.1.0
 #### Enhancements
-- <div>•Linkbox - created XMLPorts for Upgrade to NAVW19.00 - V2.1.0&nbsp;</div><div>•Profiler - created Profiler Date export&nbsp;</div><div>•Power BI - created BI Date XML Port<br></div>
-- <div>•Linkbox - Drop Area was not displaying on the Role Center.&nbsp;</div><div>•Launch - Unable to run statement when specified from report selection.<br></div>
+- <div><span style="display:inline !important;">•<span>&nbsp;</span></span>Cleaned up the code and the objects.&nbsp;</div><div>• Added UI changes to the Case Card Page and to the Case Action List Page. Moved fields on the Pages, setting the field importance of
+certain fields the FastTabs.&nbsp;</div><div>• Created an Action to Create a new Case in the Role Centre, Actions Ribbon.&nbsp;</div><div>• Add a list page for My Managed Cases, a list page for My Watched Cases, and a list page for Queues in the Navigation Pane of the
+Role Centre.&nbsp;</div><div>• Created an XMLPort for Configuration and Data. Added the XMLPort to the Setup Card.
+• The Email Case Action on the Case Card was renamed to Email Case Contact.&nbsp;</div><div>• The Case Card was tidied up - fields were moved for ease of user input and FastTabs were removed.&nbsp;</div><div>• The layout of the Case Card was simplified.
+• On the Case Card, the Total Time Taken and the Time Since Last Action fields were formatted to removed the seconds and
+milliseconds portion of the time.&nbsp;</div><div>• Moved the Queue Code field to be the first field on the Case Card for ease of user input.
+• Fixed code on the Activities Cue Group to allow users to setup colour indicators on the Cues.&nbsp;</div><div>• Created a Queue Report and a Case Report.<br></div>
+#### Bug Fixes
+- <div><span style="display:inline !important;">•<span>&nbsp;</span></span>Fixed bug on Profile List Page.&nbsp;</div><div>• Fixed bug whereby a Queue with Active Cases can be deleted.
+• Fixed bug whereby on deletion of a Queue, related tables are not cleaned up.&nbsp;</div><div>• Added a drop down view to Sub Category.&nbsp;</div><div>• Fixed bug whereby the default Log Type is not assigned when creating a Case.&nbsp;</div><div>• Allow users to select the Action Log Type when creating a new Action Log.&nbsp;</div><div>• Fixed bug on Case Card. The Closed field is now set to true on the Case Card if the Queue Status that was set as ‘Closed’ is selected
+for the Case.&nbsp;</div><div>• Fixed bug on Case Card. The State field on the Case Card is now determined by the State field of the Queue Status that is selected for
+the Case.
+• Made change to remove the Comment field from the Action Log list.&nbsp;</div><div>• Cleaned up Case deletion.&nbsp;</div><div>• Normalised Case tables.&nbsp;</div><div>• Fixed bug which was causing the Status not to update when creating a new Action Item.&nbsp;</div><div>• Fixed UI Flow.<br></div>
 
-### 1.0.2
+### 1.0.0
 #### Enhancements
-- <div>• Documentation fixes.<br></div>
+- <div>• Created tables, pages and associated functionality for Setup, Cases, Action Log, Action Log Attachment, Action Log Link, Queue,
+Escalation Rule, Queue Status, Queue Action Log Type, Case Watcher, Priority, Category, Action Log Interaction.&nbsp;</div><div>• Created functionality to use Interactions to define and track Email communication.&nbsp;</div><div>• Created a Role Center and associated Cues.&nbsp;</div><div>• Created a WYSIWYG Editor for Comments on Action Log Entries.&nbsp;</div><div>• Created an Action Log FactBox.&nbsp;</div><div>• Created a File Attachment List FactBox on the Action Log List to display a list of attached files that are assigned to the Action Log
+Item. Allowed the user to save or open the attachment.&nbsp;</div><div>• Created a Job Queue Wrapper.&nbsp;</div><div>• Changed functionality on the Action Log Link list to allow the user to open the linked record.&nbsp;</div><div>• Created manual run options for Escalation Rules and Time Calculations.&nbsp;</div><div>• Exposed Action Log Type on the Action Log FactBox.
+<br></div>
+#### Bug Fixes
+- <div>BCv14 Public App - Fixed an issue where an error was raised when emailing a Case Contact from a Case Card as the code was taking the User ID email address from the SMTP Setup and not the Case Manager Setup Card.</div>
 
-### 1.0.1
+### 3.0.4
 #### Enhancements
-- <div>•Linkbox - Created an XmlPort for setting up control Add-in.&nbsp;</div><div>•Profiler - Refactored the object selection. Rewrote the reports to loop on the questions and do basic formatting of them.&nbsp;</div><div>•Profiler - Renumbered and reordered the Tables and Pages.&nbsp;</div><div>•Cleaned up the objects.&nbsp;</div><div>•Code upgraded to 2016.<br></div>
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>Made a change to update the WriteMode property to allow emailing of a Case Contact.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>A change was made to the Escalation Card to place the list pages on FastTabs that could be expanded and collapsed.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>A change was made to the Category Card to place the list pages on FastTabs that could be expanded and collapsed.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>A change was made to the Case Card to place the list pages on FastTabs that could be expanded and collapsed.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>A change was made to the Queue Card to place the list pages on FastTabs that could be expanded and collapsed.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>Activity Groups from the SD Case Manger Role Centre were surfaced on the Order Processor Role Centre and the Purchasing Agent Role Centre.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>Updated the usage category on pages so that SD Case Manager pages can be found when searching in the Tell Me.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>Actions with icons were added to the Role Centre.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>The code base was converted from C/AL to AL extensions.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>Licensing control was added to SD Case Manager.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>The HTML Editor was converted to Javascript.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>Code in SD Case Manager that had used Ping Pong was re-written.
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>The SD Case Manager chart codeunits were removed from the code base.
+#### Bug Fixes
+- <span style="display:inline !important;">BCv14 Public App -<span>&nbsp;</span></span>Our Simply Dynamics charts were removed from SD Case Manager.
+- Fixed an issue raised on closing a Case's Action in a filtered list of Actions where a comment was also stamped on another action.
+- Fixed an issue where the Edit and View Actions were shown twice on the Actions FastTab in the Case Card.
+- Fixed an issue raised on creation of a new Case if only one Queue Code has been set up in SD Case Manager.
+- <div>Fixed an issue where the Case Number was re-numbered when the mandatory fields were filled in.</div>
+- Fixed an issue where if a mandatory field was entered and then blanked out on a Case, a user could navigate to the next page or close the page without entering the mandatory field.
+- Fixed an issue where an error was raised when a Case was opened from the Open Cases List on the Role Centre.
+- Fixed an issue where updating the Status on the Case Card to a closed status was raising an unexpected validation error.
+
+### 3.0.3
+#### Enhancements
+- Made a change to update the Case Status on the Case Card when the user is prompted to close a Case.
+#### Bug Fixes
+- Fixed an issue where closing a Case was raising an intermittent error.
+- Fixed an issue where the Assign to Me Action on the Case Card was disabled when creating a new Case.
+- Fixed an issue where users were unable to navigate to the next or previous record in the Case Card with the introduction of the test fields on the Setup Card.
+
+### 3.0.2
+#### Enhancements
+- Made a change that when the Queue Code is changed on a Case Card, that the Category Code and the Sub-Category Codes are re-validated.
+- Changed the default answer from yes to no on the message raised when Queue Code/Category is changed on the Case Card.
+- Added functionality to prevent the user from navigating to a different Case and by-passing the check for mandatory fields.
+- Moved the placement of the Summary field on the Case FactBox and the Case Action FactBox.
+- Moved the Simply Dynamics About Action on the Setup Card to the General group on the Ribbon.
+- Changed the wording of the message displayed to users on change of the Queue Code on a Case Card.
+- Surfaced the KPIs for the Case Sub Category on the SD-CSM Queue Sub Category List.
+- Created functionality to allow users to take a photo and embed the photo in the Case Action html comment area when creating Case Actions on a mobile device .
+
+### 3.0.3
+#### Enhancements
+- Created a new mobile device specific page for creating Case Actions and created functionality to direct mobile users to use this page for optimum rendering of the Case Action.
+#### Bug Fixes
+- Fixed an issue where drilling down on the Case No. FlowField on the Case Action FactBox in NAV 2018 launched a lookup page rather than launching the Case Card.
+
+### 3.0.2
+#### Enhancements
+- Added the Case Summary field to the Case FactBox and the Action Summary field to the Case Action FactBox.
+- Added the Case FactBox to the Case Action List and to the Case Action Card.
+- Added KPIs for Case Categories and Case Sub Category and surfaced same on the associated pages.
+- Added a new mandatory checkbox list to the Case Manager Setup Card to flag the field to be tested before exit on a newly created Case.
+- The Simply Dynamics About Action was added to the SD Case Manager Setup Card.
+- Created new functionality on the Template Card to allow a Default Assigned User to be assigned to the Template Actions.
+- Made a change to prompt/ask the user, on change of the Queue Code in the Case Card, to confirm whether to delete all the existing Actions and Watchers on the Case or to append new Actions and Watchers to the Case.
+- A new communication method table was added to log how a Case was received and to record the preferred communication method for Watchers.
+#### Bug Fixes
+- Fixed an issue in NAV2018 where new Actions couldn't be added to a Template when editing the Template in the Template Card.
+- Fixed an issue where on input of a Case Action, changes were reverted if the Attach File action, New Link action or Log Interaction action was selected when inputting text in the HTML Editor.
+
+### 3.0.1
+#### Enhancements
+- In the 2013R2 Build, the Case Report Email attachment pdf name didn't reflect the Case Number.
+
+### 3.0.0
+#### Enhancements
+- In the 2013R2 build, on input of a Template Action, the text in the HTML Editor is reverted if the Completed Action was chosen when inputting text into the HTML Editor.
+- In the 2013R2 Build, there was a compile error in the SD-CSM Management Codeunit in ref to File Management Codeunit when tested on non W1 environment.
+- In the 2013R2 Build, the Actions List Page contained an extra action called &quot;Home&quot; that duplicated the &quot;New Link&quot; functionality.
+- A change was made to the 2013R2 Build. In the Case Card choosing to Email Case Contact will display a message for SMTP or open Outlook as NAV 2013R2 doesn't have the Email dialog functionality of later NAV versions.
+- In the NAV 2013R2 build, the New, Edit, and View actions were not displayed in the SD-CSM Queue Escalation LP.
+- Created a 2013R2 release (backported from current release).
+- Updated the charts from standard NAV charts to the Simply Dynamics Chart control.
+- Updated the About Page.
+- Fixed an issue where on input of a Template Action, the text in the HTML Editor was reverted if the Attach File Action was chosen when inputting text into the HTML Editor.
+- Created new sample setup xml files.
+- Added the Simply Dynamics Import/Export module to SD Case Manager.
+- Removed the standard NAV OneNote, Notes, and Links from the SD Case Manager Setup Pages.
+- Created a new installer for the Simply Dynamics control add-ins used in SD Case Manager.
+- The Activity Cues on the Role Centres were split out into individual pages.
+- Refactored the objects to Simply Dynamics.
+- A W1 release of SD Case Manager was created.
+- Renamed the Analysis codes Action on the Setup Page to Analysis Codes.
+- <div><span><span style="display:inline !important;">•<span>&nbsp;</span></span>Replaced Text Editor with Html Editor.<br></span><div>• Created functionality to define a Queue Default Watchers table and assign at Queue Level for Email and User Watchers. Entries in this<br></div><div>table are automatically added to a case for the Queue.<br></div><div>• Displayed the Case Number in the My Open Cases List Pages.<br></div><div>• In the SD-CSM Case Card, if there is a contact email specified on the Case Card, when the Email Case Contact Action is chosen,<br></div><div>default the Contact Email into the To: field of the Send Email Card.<br></div><div>• SD-CSM Queue Report, on the Case Lines, show the Total Cost (LCY) for each case within the Queue. Added a Report Total for Total<br></div><div>Cost (LCY).<br></div><div>• In the Case Card, Reporter FastTab, horizontally aligned the Contact Company Name to the Contact Company No.<br></div><div>• Removed the Setup Action and the Execute Escalation Rules Action from the SD-CSM User Role Centre.<br></div><div>• Refactored XMLPorts Element Names.<br></div><span>• Updated the Readme.txt file.</span><br></div>
+#### Bug Fixes
+- Fixed an issue where the default export filename and manifest header were set to the wrong product id when exporting the Setup data from SD Case Manager..
+- Fixed a compile error in the Template Action Card.
+- Fixed an issue where an error was raised on close of the page when reviewing a completed Action.
 
