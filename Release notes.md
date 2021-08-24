@@ -6,6 +6,7 @@
 #### Bug Fixes
 - Demo
 
+
 ### 3.0.5
 #### Enhancements
 - <div>Edit View and New Actions were removed from the Template Card.</div>
