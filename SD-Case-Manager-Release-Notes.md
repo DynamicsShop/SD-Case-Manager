@@ -33,6 +33,7 @@
 #### Enhancements
 
 - BCv17 App - The code was updated to use the latest standard smtp emailing functionality in D365 which has been moved to a separate App. 
+
 - BCv14 App - Backported the latest BCv17 App to BCv14 and added the latest ISV Licence Controller to the BCv14 Build.
 
 #### Bug Fixes
