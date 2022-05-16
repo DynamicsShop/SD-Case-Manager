@@ -8,6 +8,26 @@
 
 - BCv19 App - Added the Latest ISV Licence Control with fix to Free Trials in Public Environments. 
 
+### 3.0.6.1
+
+#### Enhancements
+
+- BCv14 App - To allow for greater ease of use the Case Manager, Case Reporter and Case Watchers were merged into a new single table. Case Contacts are defined as Manager, Reporter or Watcher. This change was made to the BCv14 App v3.0.6 code base only and released as v3.0.6.1 
+
+- BCv14 App - Functionality was added to allow the option to track due date changes on Case Actions and to add due dates to be updated based on a rule. This change was made to the BCv14 App v3.0.6 code base only and released as v3.0.6.1 
+
+- BCv14 App - The concept of Analysis Codes was removed from the App to streamline the App and allow for greater ease of use. This change was made to the BCv14 App v3.0.6 code base only and released as v3.0.6.1 
+
+- BCv14 App - A drilldown to the action due date change log was surfaced on the Action Lines in the Case Card. This change was made to the BCv14 App v3.0.6 code base only and released as v3.0.6.1 
+
+- BCv14 App - The Case Action Due Date was surfaced on the Actions List in the Case Card. This change was made to the BCv14 App v3.0.6 code base only and released as v3.0.6.1 
+
+#### Bug Fixes
+
+- BCv14 App - The notifications were not being displayed correctly in the Notes attached to the Case Card. This change was made to the BCv14 App v3.0.6 code base only and released as v3.0.6.1 
+
+- BCv14 App - The notifications were not being created when the escalations were run. This change was made to the BCv14 App v3.0.6 code base only and released as v3.0.6.1 
+
 ### 3.0.6
 
 #### Enhancements
