@@ -1,5 +1,93 @@
 ## SD Case Manager Releases
 
+### 4.0.0
+
+#### Enhancements
+
+- BCv21 App - To allow for greater ease of use, SD Case Manager contains significant changes to the structure of Case Manager, Case Report and Case Watchers on the Case Card. The Watchers table has been renamed to Case Contacts and the Role of a Case Contact can be Manager, Reporter or Watcher. The Case Contact details can come from User Setup, Contact List or Manual Entry. 
+
+- BCv21 App - Upgrade code was created for upgrade of prior versions of SD Case Manager to v4.0.0 and above. 
+
+- BCv21 App - The concept of Analysis Codes was removed from the App to streamline the App and allow for greater ease of use. 
+
+- BCv21 App - Changes were made to the Default Case Watchers on the Queue Card to reflect the changes made to the Case Contacts in the Case Card. 
+
+- BCv21 App - Upgrade code was written for the changes to the structure for the Default Case Watchers on the Queue Card. 
+
+- BCv21 App - Functionality was added to allow the option to track due date changes on Case Actions and to add due dates to be updated based on a rule. 
+
+- BCv21 App - A drilldown to the action due date change log was surfaced on the Action Lines in the Case Card.  
+
+- BCv21 App - The Case Action Due Date was surfaced on the Actions List in the Case Card. 
+
+- BCv21 App - New functionality was added to allow for handling of Case Action record links to end-of-life transactions for Purchase Orders/Credit Memos to Posted Invoices/Posted Credit Memos; Sales Quotes to Orders/Posted Invoices; and Sales Orders/Credit Memos to Posted Invoices/Posted Credit Memos. Users can choose to Modify, Add, Delete or leave the record link as is on the Case Action.  
+
+- BCv21 App - A new Copy Template action was added to the Template List and Template Card.  
+
+- BCv21 App - The Create New Case action was surfaced on the following standard Microsoft Dynamics 365 Business Central pages - Customer, Vendor, Item, Posted Purchase Invoice, Posted Purchase Credit Memo, Posted Sales Invoice and Posted Sales Credit Memo. 
+
+- BCv21 App - A change was made to the notification created for assigned users when escalations were run to add the user to the notification text. 
+
+- BCv221 App - The Case Report now shows the duration of time that it took from creation to completion of the action. 
+
+- BCv21 App - A field was surfaced on the Case Report to show the Case Links. 
+
+- BCv21 App - Added a check to the code that a Manager on a Case can only have a Source of User. 
+
+- BCv21 App - In the SD Case Manager Setup, the Contact No. was updated to Reporter. The message displayed in the Case Card if the Reporter is a required field on a Case was also updated. 
+
+- BCv21 App - Changes were made to the escalations for emailing Watchers and User Watchers. To email a Watcher, the Contact Role on the Case has to be set to Watcher and the Contact Source is Manual or Contact. To email a User Watcher, the Contact Role on the Case has to be set to Watcher and the Contact Source is User. 
+
+- BCv21 App - A minor change was made to the Case Card to reorder some fields in the General FastTab. 
+
+- BCv21 App - Some fields on the Queue Card were promoted to the FastTabs. 
+
+- BCv21 App - Some fields on the Setup Card were promoted to the FastTabs. 
+
+- BCv21 App - The latest ISV licence controller was added to the App. 
+
+- BCv21 App - The licence expiry and licence expired notification was surfaced on the Case List page. 
+
+- BCv21 App - The message displayed when choosing Assisted Setup to import  Demo Data was changed. 
+
+- BCv21 App - A page was created to display all the installed Simply Dynamics Apps and subscription details for the tenant. 
+
+- BCv21 App - The Licence Message displayed on first install of SD Case Manager was changed to prompt the user to activate a free trial and to choose Assisted Setup from the Setup Card to create demo data. 
+
+- BCv21 App - Add an Alert Notification in the SD Case Manager Role Centre and Activity pages to show users that they need to activate the licence. 
+
+- BCv21 App - The SD Case Manager licence expiry message/notification was updated to show the App Name. 
+
+- BCv21 App - The permission set xml file was replaced with permission AL objects. 
+
+- BCv21 App - The links in the About page were updated to point to our new web site.
+
+- BCv21 App - ToolTips were updated to point to our new website. 
+
+- BCv21 App - Captions on Actions were updated so they will be translatable if needed. 
+
+- BCv21 App - The Product Activation page was updated to point to the new CRM URL. 
+
+#### Bug Fixes
+
+- Bcv21 App - Fixed an issue where when deleting a Case the prompt on mandatory Case fields missing was being raised. 
+
+- BCv21 App - A fix was made to the Inactive Open Cases flowfield in the Sub Categories FastTab in the Categories Card. 
+
+- BCv21 App - Fixed the flowfield count for Inactive Open Cases in the Categories FastTab on the Queue Card. 
+
+- BCv21 App - Fixed an issue when drilling into the All Open Cases cue in the SD Case Manager Role Centre raised an error when a notification existed for a Case in another Company. 
+
+- BCv21 App - A fix was made to the Case Card where the Case Contacts record was syncing the Contact back to the Case this happened during restructuring of the new Case Contact table. 
+
+- BCv21 App - Fixed an issue where users could open the Case Card when the SD Case Manager was not activated but were then unable to close the Case Card as the licence check was firing.  
+
+- BCv21 App - A fix was made to the code for licence key checks on the SD Case Manager Role Centres. 
+
+- BCv21 App - Fix to an intermittent error raised when opening the Escalation Card. 
+
+- BCv21 App - The ping pong on the Case Card was removed as Business Central raises a message on the case card when the ping pong is called. 
+
 ### 3.0.7
 
 #### Enhancements
