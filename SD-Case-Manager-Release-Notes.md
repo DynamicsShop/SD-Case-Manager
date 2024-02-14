@@ -110,7 +110,7 @@
 
 - BCv19 App - Added the Latest ISV Licence Control with fix to Free Trials in Public Environments. 
 
-### 3.0.6.2
+### 3.0.6.1
 
 #### Enhancements
 
