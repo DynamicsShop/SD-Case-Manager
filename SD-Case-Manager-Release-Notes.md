@@ -20,7 +20,7 @@
 
 - AppSource App - A new TimeLine FactBox for a Case was created. Ticket created, status changes, assigning actions, changing the priority on a case, and emails sent or received are recorded to the TimeLine FactBox. The events in the Case Timeline are ordered in descending order.  
 
-- AppSource App - A new HTML editor used in the Comments section of a Case Action was added to SD Case Manager. 
+- AppSource App - A new improved HTML editor used in the Comments section of a Case Action was added to SD Case Manager. 
 
 - AppSource App - An SD Case Manager Linked Cases FactBox that shows a count of Open Cases, Hold Cases and Closed Cases for the linked record was created and surfaced on the Customer Card, Item Card, Vendor Card, Posted Sales Invoice, Posted Purchase Credit Memo, Posted Purchase Invoice, and the Posted Sales Credit Memo. 
 
