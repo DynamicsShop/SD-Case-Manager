@@ -4,7 +4,7 @@
 
 #### Enhancements
 
-- AppSource App - New functionality was added to allow users to log a Case from an Email. A mail box can be monitored at Queue level. When creating a Case, the Contact on the Case is determined by looking at the Email. A new Contact can easily be created when logging the new Case. 
+- AppSource App - New functionality was added to allow users to log a Case from an email. A mail box can be monitored at Queue level. When creating a Case, the Contact on the Case is determined by looking at the email. A new Contact can easily be created when logging the new Case. 
 
 - AppSource App - New functionality was added to read a mail box to update Cases. Emails related to existing cases are matched and automatically moved to the Email Archive table. The search phrase in the subject line parsing used to find cases in the monitored Email Inboxes is a case sensitive search phrase. Punctuation characters such as commas and full stops are ignored in the Subject Line Parsing phrase.  
 
@@ -14,7 +14,7 @@
 
 - AppSource App - Functionality was added to the SD Case Manager Job Queue Card to add a Job for email inbox scanning. The SD Case Manager Job Queue Card was also modified to allow for easier setup of creating jobs for executing escalation rules and email inbox scanning. 
 
-- AppSource App - New tables, pages and codeunits were added to create custom Email Templates which can contain variable placeholder data in the Email Subject and Body. Placeholder data is taken from the Case, the Queue Card and from the Case Actions. The Email Templates are used to send customised emails from the Case Card. An option was added to the Email Templates to attach the Case Report when the mail is sent.  Emails can be sent from Cases by opening a dialog box where you can select a Template Email to send an Email. A lookup to the Status field was added to the Email Templates so the list of Email Templates can be filtered according to the current Case Status.
+- AppSource App - New tables, pages and codeunits were added to create custom Email Templates which can contain variable placeholder data in the Email Subject and Body. Placeholder data is taken from the Case, the Queue Card and from the Case Actions. The Email Templates are used to send customised emails from the Case Card. An option was added to the Email Templates to attach the Case Report when the mail is sent.  Emails can be sent from Cases by opening a dialog box where you can select a Template Email to send an email. A lookup to the Status field was added to the Email Templates so the list of Email Templates can be filtered according to the current Case Status.
 
 - AppSource App - Functionality was added to easily copy Email Templates for ease of setup. 
 
@@ -30,7 +30,7 @@
 
 - AppSource App - The UI and Setup in SD Case Manager was reviewed and streamlined. All pages were reviewed for UI improvements.
 
-- AppSource App - Various changes were made to the Case Card. Changes were made to FastTabs, field placement and tooltips in the Case Card. A View Comments action was added. Also, users can now send Emails from the Case Card using Email Templates.
+- AppSource App - Various changes were made to the Case Card. Changes were made to FastTabs, field placement and tooltips in the Case Card. A View Comments action was added. Also, users can now send emails from the Case Card using Email Templates.
 
 - AppSource App - A number of changes were made to the Case List. The order of the columns was changed and a freeze frame was added. The Type on the Contacts flowfield was removed and all Case Contacts are now showing here and in the Case Contacts FactBox.  
 
