@@ -4,83 +4,45 @@
 
 #### Enhancements
 
-- AppSource App - New functionality was added to allow users to log a Case from an Email. A mail box can be monitored by Queue type. When creating a Case, the Contact on the Case is determined by looking at the Email. A new Contact can easily be created when logging the new Case. 
+- AppSource App - New functionality was added to allow users to log a Case from an Email. A mail box can be monitored at Queue level. When creating a Case, the Contact on the Case is determined by looking at the Email. A new Contact can easily be created when logging the new Case. 
+
+- AppSource App - New functionality was added to read a mail box to update Cases. Emails related to existing cases are matched and automatically moved to the Email Archive table. The search phrase in the subject line parsing used to find cases in the monitored Email Inboxes is a case sensitive search phrase. Punctuation characters such as commas and full stops are ignored in the Subject Line Parsing phrase.  
 
 - AppSource App - Functionality was added to allow users manually link an email from the monitored Inbox to an existing Case. 
 
-- AppSource App - New fields to allow for creating a Case from incoming mails were added to the Setup Card and various other UI changes were made. 
+- AppSource App - New fields to allow for creating a Case from incoming mails were added to the Setup Card. A field was added to the Setup Card to allow users specify when to delete records from the Email Archive. Functionality was added to delete the Archive records when the Delete Archive action in the Setup Card is selected. Various other UI changes were made to FastTabs, field placement and tooltips in the SD Case Manager Setup Card. 
 
-- AppSource App - Changes were made to make case creation from emails easier for users. 
+- AppSource App - Functionality was added to the SD Case Manager Job Queue Card to add a Job for email inbox scanning. The SD Case Manager Job Queue Card was also modified to allow for easier setup of creating jobs for executing escalation rules and email inbox scanning. 
 
-- AppSource App - The code behind the function to create a case from an email was reworked.
-
-- AppSource App - New functionality was added to read a mail box to update Cases. Emails related to existing cases are matched and automatically moved to the Email Archive table.
-
-- AppSource App - Changes were made to make manually linking an inbound email to an existing case easier for the user. 
-
-- AppSource App - Changes were made to the the functionality behind the Update action on the Pending Email Inbox List.
-
-- AppSource App - The search phrase in the subject line parsing used to find cases in the monitored Email Inboxes was changed to a case sensitive search phrase. Punctuation characters such as commas and full stops are ignored in the Subject Line Parsing phrase.  
-
-- AppSource App - Functionality was added to the SD Case Manager Job Queue Card to allow for email inbox scanning. The SD Case Manager Job Queue Card was also modified to allow for easier setup of creating jobs for executing escalation rules and email inbox scanning. 
-
-- AppSource App - New tables, pages and codeunits were added to  create custom Email Templates which can contain variable placeholder data. The Email Templates are used to send customised emails from the Case Card. 
-
-- AppSource App - New functionality was created to add Email Templates with variable data placeholders in the Email Subject and Body. Emails can be sent from Cases by opening a dialog box where you can select a Template Email to send an Email. 
-
-- AppSource App - The Email Templates were modified to show the information displayed in Flowfields from the Cases. Placeholder fields from the Queue Card and from the Case Actions were also added. 
-
-- AppSource App - An option was added to the Email Templates to attach the Case Report when the mail is sent. 
+- AppSource App - New tables, pages and codeunits were added to create custom Email Templates which can contain variable placeholder data in the Email Subject and Body. Placeholder data is taken from the Case, the Queue Card and from the Case Actions. The Email Templates are used to send customised emails from the Case Card. An option was added to the Email Templates to attach the Case Report when the mail is sent.  Emails can be sent from Cases by opening a dialog box where you can select a Template Email to send an Email. A lookup to the Status field was added to the Email Templates so the list of Email Templates can be filtered according to the current Case Status.
 
 - AppSource App - Functionality was added to easily copy Email Templates for ease of setup. 
 
-- AppSource App - A lookup to the Status field was added to the Email Templates so the list of Email Templates can be filtered according to the current case status. 
+- AppSource App - A new TimeLine FactBox for a Case was created. Ticket created, status changes, assigning actions, changing the priority on a case, and emails sent or received are recorded to the TimeLine FactBox. The events in the Case Timeline are ordered in descending order.  
 
-- AppSource App - A new TimeLine FactBox for a Case was created. Ticket created, status changes and emails sent or received are recorded to the TimeLine FactBox.  
-
-- AppSource App - Additional changes were made to the Case Timeline. Assigning actions to someone and changing the priority on a case are now logged on the Case Timeline. The events in the Case Timeline is now ordered in descending order.
-
-- AppSource App - A new HTML editor was added to SD Case Manager. 
-
-- AppSource App - Functionality was created to allow users surface the Create Case action and the SD Case Manager Linked Cases FactBox to cards and lists by creating and publishing an extension app directly from SD Case Manager. This functionality is accessed via the SD Case Manager Extension Setup Card or by choosing the SD Case Manager Extension Setup wizard from the SD Case Manager Setup Card.
+- AppSource App - A new HTML editor used in the Comments section of a Case Action was added to SD Case Manager. 
 
 - AppSource App - An SD Case Manager Linked Cases FactBox that shows a count of Open Cases, Hold Cases and Closed Cases for the linked record was created and surfaced on the Customer Card, Item Card, Vendor Card, Posted Sales Invoice, Posted Purchase Credit Memo, Posted Purchase Invoice, and the Posted Sales Credit Memo. 
 
-- AppSouce App - UI changes were made to the Action Types list. New fields to set comment colours for the different action type comments were added. These colours are displayed when the user chooses the View Comments action in the Case Card. 
+- AppSource App - Functionality was created to allow users surface the Create Case action and the SD Case Manager Linked Cases FactBox to cards and lists by creating and publishing an extension app directly from SD Case Manager. This functionality is accessed via the SD Case Manager Extension Setup Card or by choosing the SD Case Manager Extension Setup wizard from the SD Case Manager Setup Card.
 
 - AppSource App - A change was made to allow a case link to be created for an end of life document even if the Case has been marked as closed. 
 
-- AppSource App - The UI and Setup in SD Case Manager was reviewed and streamlined. 
+- AppSource App - The UI and Setup in SD Case Manager was reviewed and streamlined. All pages were reviewed for UI improvements.
 
-- AppSource App - All pages were reviewed for UI improvements.
-
-- AppSource App - Changes were made to FastTabs, field placement and tooltips in the SD Case Manager Setup Card. 
-
-- AppSource App - A field was added to the Setup Card to allow users specify when to delete records from the Email Archive. Functionality was added to delete the Archive records when the Delete Archive action in the Setup Card is selected. 
-
-- AppSource App - Changes were made to FastTabs, field placement and tooltips in the Case Card. 
-
-- AppSource App - Various changes were made to the Case Card. A View Comments action was added. Also, users can now send Emails from the Case Card using Email Templates.
+- AppSource App - Various changes were made to the Case Card. Changes were made to FastTabs, field placement and tooltips in the Case Card. A View Comments action was added. Also, users can now send Emails from the Case Card using Email Templates.
 
 - AppSource App - A number of changes were made to the Case List. The order of the columns was changed and a freeze frame was added. The Type on the Contacts flowfield was removed and all Case Contacts are now showing here and in the Case Contacts FactBox.  
 
 - AppSource App - Some UI changes were made to the Case Details FactBox. A count of the Open Cases for the case contact was added to the FactBox. 
 
-- AppSource App - A number of UI changes were made to the Email Inbox Archive list. 
-
-- AppSource App - UI changes were made to the Email Inbox list and also to the Email Inbox Card. 
-
 - AppSource App - A freeze frame was added to the Case Actions list. 
 
-- AppSource App - UI changes were made to the Email Inbox Pending list. A freeze frame was added, columns and actions were reordered.
-
-- AppSource App - Additional Tooltip and Caption Updates were made to the Case Card, Email Template Card and Email Template List. 
+- AppSource App - UI changes were made to the Action Types list. New fields to set comment colours for the different action type comments were added. These colours are displayed when the user chooses the View Comments action in the Case Card. 
 
 - AppSource App - Changes were made to the Case Details FactBox. The Watchers field filters to a Contact Role Type of Watcher and some field captions were updated.
 
-- AppSource App - The UI in the Role Centre was streamlined and new cues were created. 
-
-- AppSource App - The UI in the Role Centre was streamlined. Duplicate actions were removed and a new action to the Case Templates was surfaced.
+- AppSource App - The UI in the Role Centre was streamlined and new cues were created. Duplicate actions were removed and a new action to the Case Templates was surfaced.
 
 - AppSource App - The SD Case Manager Notifications list was added to the Case Manager User Role Centre.
 
@@ -90,7 +52,7 @@
    
 - AppSource App - The logo in App was updated to the new logo. 
 
-- AppSource App - The links in the About Page were updated. 
+- AppSource App - The links in the About Page were updated.
 
 ### 4.0.1
 
