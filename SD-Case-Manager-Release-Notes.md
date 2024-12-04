@@ -1,5 +1,19 @@
 ## SD Case Manager Releases
 
+### 5.0.1
+
+#### Enhancements
+
+- AppSource App - A change was made to the licence expiry notification. The logic for checking for expiry dates was reworked.
+
+- AppSource App - AppSource App - An Error Message is raised for users using Graph API to monitor email inboxes or to send emails to let users know when the Graph API token has expired.
+
+- AppSource App - Enhancements were made to the App Request Subscription page.
+
+- AppSource App - Additional phrases were added as search phrases for the SD Case Manager pages.
+
+- AppSource App - ToolTips were updated in the About, Product Activation, and Tenant Subscription pages.
+
 ### 5.0.0
 
 #### Enhancements
