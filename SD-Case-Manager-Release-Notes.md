@@ -1,5 +1,11 @@
 ## SD Case Manager Releases
 
+### 5.0.2
+
+#### Enhancements
+
+- AppSource App - An Escalation From Email Address field was added to the SD Case Manager Setup card to use for Email Escalations when the Email Service is Email API.
+
 ### 5.0.1
 
 #### Enhancements
