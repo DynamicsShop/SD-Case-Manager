@@ -6,6 +6,8 @@
 
 - AppSource App - An Escalation From Email Address field was added to the SD Case Manager Setup card to use for Email Escalations when the Email Service is Email API.
 
+- AppSource App - A change was made to display the contents of the HTML control when the Case Action is in view mode.
+
 ### 5.0.1
 
 #### Enhancements
