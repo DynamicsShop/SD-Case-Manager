@@ -1,5 +1,27 @@
 ## SD Case Manager Releases
 
+### 6.0.0
+
+#### Enhancements
+
+- AppSource App - Project Codes were added to Queues and Cases.
+
+- AppSource App - A change was made to allow for a selection of a customer at case level to filter down the Project Code and the Reporter lookup.
+
+- AppSource App - The Managed By field was surfaced on the Category list part page.
+
+- AppSource App - A new field, External Case Reference, was added to the Case Card.
+
+- AppSource App - Functionality was added to set default case watchers on the customer card and populate the Case Card with these watchers when a Case is logged for the customer. 
+
+- AppSource App - Templates can now be specified at Sub-Category Level.
+
+- AppSource App - A change was made to the colour coding on the action comments. The Action Code and not the Summary is now added as the comment header.
+
+#### Bug Fixes
+
+- AppSource App - Setting the Managed By field on a Category Card raises an error when the Category is chosen in a Case. This was fixed.
+
 ### 5.0.2
 
 #### Enhancements
