@@ -16,6 +16,8 @@
 
 - AppSource App - A minor change was made to the About page.
 
+- AppSource App - A minor change to the Product Activation page.
+
 ### 6.0.0
 
 #### Enhancements
