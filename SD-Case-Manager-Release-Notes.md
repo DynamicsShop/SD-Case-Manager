@@ -1,5 +1,22 @@
 ## SD Case Manager Releases
 
+### 6.2.0
+
+#### Enhancements
+
+- AppSource App - When choosing the Open In Browser action from the Email Inbox Archive, the email is opened in the logged in users email box. If the Queue Email Address on the Email Inboxes is different to the logged in users email, the email cannot be found. However, you can open the email by choosing the new Download Email File action, which downloads the email, and when the downloaded email file is opened, the user can reply to the email from their email box. 
+
+- AppSource App - Functionality was added in the SD Case Manager Email Inbox Pending and SD Case Manager Email Inbox Archive to include the email trail when replying to emails using the Email Templates. 
+
+- AppSource App - A change was made to the HTML Editor to auto insert a hyperlink in the outgoing email if the placeholder field on the Email Template has a URL structure. 
+
+- AppSource App - When creating a Case using the New Case action, surfaced on the Customer Card, Vendor Card, Item Card, Posted Sales Invoice, Posted Purchase Credit Memo, Posted Purchase Invoice and Posted Sales Credit Memo, a link to the record from where the Case was created is auto inserted on the Case. The link from the record where the Case is created is also auto inserted if the New Case action was surfaced on a page using the SD Case Manager Extension Wizard.
+
+- AppSource App - When creating a new Case, all fields on the Case Card are now initially non-editable until the Queue Code is selected.
+
+#### Bug Fixes
+
+- AppSource App - An issue was fixed where if a Customer No was not specified on the Case, and a Contact was chosen as the Reporter, the Customer No. was populated with the Customer associated with the Contact but the selected Contact was not placed in the Contacts List. The Customer No is no longer auto populated on the CardPage from the Contact chosen on the ListPart.
 ### 6.1.0
 
 #### Enhancements
