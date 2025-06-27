@@ -17,6 +17,7 @@
 #### Bug Fixes
 
 - AppSource App - An issue was fixed where if a Customer No was not specified on the Case, and a Contact was chosen as the Reporter, the Customer No. was populated with the Customer associated with the Contact but the selected Contact was not placed in the Contacts List. The Customer No is no longer auto populated on the CardPage from the Contact chosen on the ListPart.
+
 ### 6.1.0
 
 #### Enhancements
