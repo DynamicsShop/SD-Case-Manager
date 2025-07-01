@@ -8,7 +8,9 @@
 
 - AppSource App - Functionality was added in the SD Case Manager Email Inbox Pending and SD Case Manager Email Inbox Archive to include the email trail when replying to emails using the Email Templates. 
 
-- AppSource App - A change was made to the HTML Editor to auto insert a hyperlink in the outgoing email if the placeholder field on the Email Template has a URL structure. 
+- AppSource App - A change was made to the HTML Editor to auto insert a hyperlink in the outgoing email if the placeholder field on the Email Template has a URL structure.
+
+- AppSource App - The existing Email Inbox interface was replaced with a new interface and add two extra functions were added ReplyTo and GetEmailMimeContent.
 
 - AppSource App - When creating a Case using the New Case action, surfaced on the Customer Card, Vendor Card, Item Card, Posted Sales Invoice, Posted Purchase Credit Memo, Posted Purchase Invoice and Posted Sales Credit Memo, a link to the record from where the Case was created is auto inserted on the Case. The link from the record where the Case is created is also auto inserted if the New Case action was surfaced on a page using the SD Case Manager Extension Wizard.
 
