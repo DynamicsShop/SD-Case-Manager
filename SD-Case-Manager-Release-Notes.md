@@ -1,5 +1,13 @@
 ## SD Case Manager Releases
 
+### 6.2.1
+
+#### Enhancements
+
+- AppSource App - A link to the user guide on the DynamicsShop page was added to the About page and to the Manage Subscriptions page.
+
+- AppSource App - Changes were made to ensure compatibility with the D365 BC 2025 Wave 2 release.
+  
 ### 6.2.0
 
 #### Enhancements
@@ -687,5 +695,6 @@
 - Normalised Case tables. 
 - Fixed bug which was causing the Status not to update when creating a new Action Item. 
 - Fixed UI Flow.
+
 
 
