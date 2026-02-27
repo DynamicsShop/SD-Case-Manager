@@ -1,5 +1,11 @@
 ## SD Case Manager Releases
 
+### 6.2.2
+
+#### Enhancements
+
+- AppSource App - Restored the ability for users to reopen closed Cases.
+
 ### 6.2.1
 
 #### Enhancements
@@ -695,6 +701,7 @@
 - Normalised Case tables. 
 - Fixed bug which was causing the Status not to update when creating a new Action Item. 
 - Fixed UI Flow.
+
 
 
 
