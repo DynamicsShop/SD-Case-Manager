@@ -1,5 +1,49 @@
 ## SD Case Manager Releases
 
+### 7.0.0
+
+#### Enhancements
+
+- New functionality created to use Projects to request, allocate, record and schedule time and costs against a Case.
+
+- The Cost LCY field was removed from the Case Actions on the Case Card. Projects are now used to track costs for cost recording.  
+
+- The cues for each SD Case Manager Role Centre were reordered. A new Boolean was added to the Priorities to flag a priority as critical. Cases with this a priority flagged as critical will appear in the Critical Cases cue. 
+
+- Users are now granted access to Queues in the Queue Users page. This allows for filtering down of Cases and Actions to the granted Queues in the SD Case Manager Activities - Mine group in the SD Case Manager Role Centres.
+
+- Various UI changes were made to the Case list. A freeze frame was added. Some fields were hidden. The Next Action By and Next Action Date were added to the list. Columns were reordered. Cases can be filtered by Customer Code (Entity picked up from the Projects).
+
+- Various UI changes were made to the Case Details FactBox. Fields were added to the Factbox.
+
+- The Email Case Contact action on the Case Card is now set to hidden by default.
+
+- A new Create Case action was added to the SD Case Manager Role Centres.
+
+- New fields were added to the Queue Card to act as Placeholder fields and Caption fields for use in the email templates.
+
+- User ID and Date are now stamped when adding a Comment at Action level.
+
+- The last email sent and last email received for a Case are stamped in the Case Details FactBox.
+
+- A Reason Code was added to the prompt that is raised when a Case is place on hold.
+
+- The Cost (LCY) field was removed from the Queue Report and the Case Report.
+
+- The report selection page on the Case Report was modified to add extra filters to the report. 
+
+- The Case URL and the Case Action URL were added to the available placeholder fields in the Email Templates.
+
+- A Boolean was added to the Setup Card to prevent case deletion.
+
+- A No. Series is created on install of SD Case Manager and is defaulted into the Setup Card.
+
+- A link to the latest User Guide was added to the About page.
+
+- A new Case Timeline View was added.
+
+- The notification prompting users to activate a free trial of SD Case Manager on a fresh install has been limited to display no more than once per hour on standard role centres.
+
 ### 6.2.2
 
 #### Enhancements
