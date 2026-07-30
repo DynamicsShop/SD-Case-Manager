@@ -1,5 +1,15 @@
 ## SD Case Manager Releases
 
+### 7.0.1
+
+#### Enhancements
+
+- The Project Type field on the Project Card was made editable.
+
+- The Manage Subscriptions Page, accessed from the Setup Card, was updated.
+
+- The link in the View Our Apps action on the Setup Card was updated.
+
 ### 7.0.0
 
 #### Enhancements
