@@ -1,5 +1,31 @@
 ## SD Case Manager Releases
 
+### 7.1.0
+
+#### Enhancements
+
+- Telemetry was added to log when a new Case is created.
+
+- Added a new Escalation Action to Email the assigned Case Manager.
+
+- Added a new action on the Actions list on the Case Card to link a Case to another Case.
+
+- Added functionality to Copy a Case to a new Case.
+
+- Improved the user experience in SD Case Manager by updating tooltips across the SD Case Manager pages, to provide more consistent, accurate, and user-friendly guidance on page fields and actions.
+
+- An update was made to the next working day calculation when rounding scheduled time.
+
+- An update was made to the message displayed on the Activation page on initial installation of the App.
+
+- Replaced locale-dependent DateTime conversion in the Assisted Setup import process to improve reliability.
+
+- A minor modification was made to graph integration procedures. 
+
+#### Bug Fixes
+
+- A fix was made to preserve the category-specific subject when creating calendar events.
+
 ### 7.0.1
 
 #### Enhancements
